@@ -1,10 +1,10 @@
-using Microsoft.Microsoft.SemanticKernel;
-using Microsoft.Microsoft.SemanticKernel.ChatCompletion;
+using Microsoft.SemanticKernel;
+using Microsoft.SemanticKernel.ChatCompletion;
 
 var builder = WebApplication.CreateBuilder(args);
 
 //Register Semantic Kernel with Ollama 
-builder.Services.AddSingleton<IKernel>(sp =>
+builder.Services.AddSingleton<Kernel>(sp =>
 {
     var kerneBuilder = Kernel.CreateBuilder();
     kerneBuilder.AddOllamaChatCompletion("Ollama", "http://localhost:11434");
