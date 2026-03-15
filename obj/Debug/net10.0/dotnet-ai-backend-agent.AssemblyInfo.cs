@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dotnet-ai-backend-agent")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cfed4552b4b56c343787bad17884cbf23b0d4c0c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9876a25b21d7d4993a40c711ac781996778cc68f")]
 [assembly: System.Reflection.AssemblyProductAttribute("dotnet-ai-backend-agent")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dotnet-ai-backend-agent")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

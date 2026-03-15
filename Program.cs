@@ -2,6 +2,7 @@
 
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;
+using Microsoft.AspNetCore.Mvc;
 //using Microsoft.SemanticKernel.ChatCompletion.OllamaKernelBuilderExtensions;
 using System;
 
@@ -11,23 +12,23 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSingleton<Kernel>(sp =>
 {
     var kerneBuilder = Kernel.CreateBuilder();
-    kerneBuilder.AddOllamaChatCompletion(modelId : "phi3", endpoint: new Uri("http://localhost:11434"));
+    kerneBuilder.AddOllamaChatCompletion(modelId : "llama3.2", endpoint: new Uri("http://localhost:11434"));
 
     return kerneBuilder.Build();
 });
 
 var app = builder.Build();
 
-app.MapGet("/chat", async (ChatRequest request, Kernel kernel) =>
+app.MapGet("/chat", async ([FromBody]ChatRequest request, [FromServices] Kernel kernel) =>
 {
     var chatService = kernel.GetRequiredService<IChatCompletionService>();
 
     var result = await chatService.GetChatMessageContentAsync(
-        "You are a helpful senior .NET backend engineer with deep SQL Server knowledge. \n\nUser: " + request.Query);
+         request.query);
 
-    return Results.Ok(new { response = result.Content, model = "phi3" });
+    return Results.Ok(new { response = result.Content, model = "llama3.2" });
 });
 
 app.Run();
 
-public record ChatRequest(string Query);
+public record ChatRequest(string query);
