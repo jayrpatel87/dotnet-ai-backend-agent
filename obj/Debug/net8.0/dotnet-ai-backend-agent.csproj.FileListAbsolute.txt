@@ -1,0 +1,8 @@
+C:\Projects\dotnet-ai-backend-agent\obj\Debug\net8.0\dotnet-ai-backend-agent.csproj.AssemblyReference.cache
+C:\Projects\dotnet-ai-backend-agent\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Projects\dotnet-ai-backend-agent\obj\Debug\net8.0\dotnet-ai-backend-agent.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\dotnet-ai-backend-agent\obj\Debug\net8.0\dotnet-ai-backend-agent.AssemblyInfoInputs.cache
+C:\Projects\dotnet-ai-backend-agent\obj\Debug\net8.0\dotnet-ai-backend-agent.AssemblyInfo.cs
+C:\Projects\dotnet-ai-backend-agent\obj\Debug\net8.0\dotnet-ai-backend-agent.csproj.CoreCompileInputs.cache
+C:\Projects\dotnet-ai-backend-agent\obj\Debug\net8.0\dotnet-ai-backend-agent.MvcApplicationPartsAssemblyInfo.cache
+C:\Projects\dotnet-ai-backend-agent\obj\Debug\net8.0\dotnet-ai-backend-agent.sourcelink.json
