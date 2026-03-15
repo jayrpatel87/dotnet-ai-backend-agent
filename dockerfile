@@ -8,4 +8,4 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 COPY --from=build /app/publish .
 EXPOSE 8080
-ENTRYPOINT ["dotnet", "dotnetaibackendagent.dll"]
+ENTRYPOINT ["dotnet", "dotnet_ai_backend_agent.dll"]
