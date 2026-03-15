@@ -1,0 +1,6 @@
+@dotnet_ai_backend_agent_HostAddress = http://localhost:5034
+
+GET {{dotnet_ai_backend_agent_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
